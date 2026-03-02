@@ -1,0 +1,144 @@
+{
+  "identity": {
+    "name": "E1 - The Anti-AI Designer",
+    "mission": "Create a Tech-forward & Futuristic AI-gile framework platform that feels like a command center.",
+    "principles": [
+      "Fusion over Imitation: Mix Cyberpunk + Swiss Design + Tactical Minimalism.",
+      "Emotion First: The user feels powerful, intelligent, and in control.",
+      "Content is King: Data is the art. Visualization is the hero.",
+      "Negative Space: Use deep void space to make neon accents pop.",
+      "Contrast: High contrast text for readability, subtle contrast for hierarchy."
+    ],
+    "anti_patterns": [
+      "Purple/Teal everywhere without purpose.",
+      "Inter font for headings.",
+      "Centered layouts (unless specific marketing needs).",
+      "Gradient overload.",
+      "Generic white cards."
+    ]
+  },
+  "theme": {
+    "mode": "dark",
+    "strategy": "The 'Void' - Deepest black with electric accents.",
+    "background_base": "#050505",
+    "surface_base": "#0A0A0A",
+    "overlay_base": "#111111"
+  },
+  "typography": {
+    "font_family_heading": "Unbounded, Chivo, system-ui, sans-serif",
+    "font_family_body": "JetBrains Mono, Fira Code, Inter, monospace",
+    "instructions": "Import 'Unbounded' and 'JetBrains Mono' from Google Fonts in index.css. Use Unbounded for all H1-H3. Use JetBrains Mono for all data, code, and labels.",
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-black tracking-tighter uppercase",
+      "h2": "text-3xl md:text-5xl font-bold tracking-tight",
+      "h3": "text-2xl font-semibold tracking-tight",
+      "body": "text-sm md:text-base leading-relaxed text-muted-foreground",
+      "label": "text-xs font-mono uppercase tracking-widest text-muted-foreground"
+    }
+  },
+  "colors": {
+    "primary": {
+      "name": "Electric Violet",
+      "hex": "#7000FF",
+      "tailwind": "bg-[#7000FF] text-white"
+    },
+    "secondary": {
+      "name": "Neon Cyan",
+      "hex": "#00F0FF",
+      "tailwind": "bg-[#00F0FF] text-black"
+    },
+    "accent": {
+      "name": "Signal Amber",
+      "hex": "#FFB800",
+      "tailwind": "text-[#FFB800]"
+    },
+    "background": {
+      "app": "bg-[#050505]",
+      "card": "bg-[#0A0A0A]",
+      "panel": "bg-[#111111]"
+    },
+    "border": "border-white/10",
+    "utility": {
+      "success": "#00FF94",
+      "error": "#FF0055",
+      "warning": "#FFB800"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-black/40 border border-white/10",
+    "neon_glow": "shadow-[0_0_20px_rgba(112,0,255,0.3)]",
+    "scanlines": "bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.25)_50%),linear-gradient(90deg,rgba(255,0,0,0.06),rgba(0,255,0,0.02),rgba(0,0,255,0.06))] bg-[length:100%_4px,6px_100%]",
+    "tracing_beam": "relative after:absolute after:inset-0 after:rounded-lg after:p-[1px] after:bg-gradient-to-r after:from-transparent after:via-[#00F0FF] after:to-transparent after:opacity-0 hover:after:opacity-100 after:transition-opacity",
+    "gradients": {
+      "hero": "bg-gradient-to-b from-[#7000FF]/20 to-transparent",
+      "card_hover": "hover:bg-white/5 transition-colors duration-300"
+    }
+  },
+  "layout_strategy": {
+    "dashboard": "Bento Grid: grid grid-cols-1 md:grid-cols-12 gap-4 p-4 md:p-6",
+    "marketing": "Asymmetrical Tetris Grid: grid-cols-1 md:grid-cols-12 gap-8",
+    "panels": "Resizable panels using react-resizable-panels. Left sidebar for Nav/Context, Center for Workspace, Right for Agents/Inspector.",
+    "spacing": "Generous padding (p-6, p-8) inside cards to allow data to breathe."
+  },
+  "components": {
+    "cards": {
+      "style": "bg-[#0A0A0A] border border-white/10 rounded-xl hover:border-white/20 transition-colors relative overflow-hidden",
+      "content_padding": "p-6"
+    },
+    "buttons": {
+      "primary": "bg-[#7000FF] hover:bg-[#6000DD] text-white font-mono uppercase tracking-wider px-6 py-3 rounded-md shadow-[0_0_15px_rgba(112,0,255,0.4)] transition-all hover:scale-105 active:scale-95",
+      "secondary": "bg-transparent border border-[#00F0FF] text-[#00F0FF] hover:bg-[#00F0FF]/10 font-mono uppercase tracking-wider px-6 py-3 rounded-md transition-all",
+      "ghost": "text-muted-foreground hover:text-white hover:bg-white/5 font-mono px-4 py-2 rounded-md"
+    },
+    "inputs": {
+      "style": "bg-black/50 border border-white/10 focus:border-[#00F0FF] text-white rounded-md p-3 font-mono placeholder:text-white/20 transition-colors"
+    },
+    "badges": {
+      "style": "bg-white/5 border border-white/10 text-xs font-mono px-2 py-1 rounded text-white/70"
+    }
+  },
+  "icons": {
+    "library": "lucide-react",
+    "style": "stroke-1.5",
+    "brand_replacements": {
+      "github": "Github icon from lucide-react",
+      "gitlab": "Gitlab icon from lucide-react",
+      "code": "Code2 icon",
+      "architecture": "Network icon",
+      "security": "ShieldAlert icon",
+      "agent": "Bot icon"
+    }
+  },
+  "images": {
+    "hero_background": "https://images.unsplash.com/photo-1768522488404-ee520889e7f3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHw0fHxmdXR1cmlzdGljJTIwYWJzdHJhY3QlMjBhaSUyMG5ldXJhbCUyMG5ldHdvcmslMjBkYXJrJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3NzI0NjY0Njh8MA&ixlib=rb-4.1.0&q=85",
+    "abstract_neural": "https://images.unsplash.com/photo-1768327239584-e97d004f1830?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwzfHxmdXR1cmlzdGljJTIwYWJzdHJhY3QlMjBhaSUyMG5ldXJhbCUyMG5ldHdvcmslMjBkYXJrJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3NzI0NjY0Njh8MA&ixlib=rb-4.1.0&q=85",
+    "agent_avatar_default": "https://images.unsplash.com/photo-1625314887424-9f190599bd56?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHw0fHxyb2JvdCUyMGF2YXRhciUyMGhlYWRzaG90JTIwZnV0dXJpc3RpY3xlbnwwfHx8fDE3NzI0NjY0Njl8MA&ixlib=rb-4.1.0&q=85"
+  },
+  "accessibility": {
+    "contrast_check": "Ensure neon text is not placed on white backgrounds. Use dark backgrounds for neon text.",
+    "focus_states": "focus:ring-2 focus:ring-[#00F0FF] focus:ring-offset-2 focus:ring-offset-black",
+    "reduced_motion": "respect-reduced-motion"
+  },
+  "universal_guidelines": {
+    "general": [
+      "Don't make generic centered layouts.",
+      "Create depth through layered z-index.",
+      "Every interaction needs micro-animations.",
+      "Use 'sonner' for toasts.",
+      "Components MUST use named exports.",
+      "Pages MUST use default exports."
+    ],
+    "testing": [
+      "All interactive elements MUST include 'data-testid' attribute."
+    ]
+  },
+  "instructions_to_main_agent": [
+    "1. Setup Fonts: Add Google Fonts link for 'Unbounded' and 'JetBrains Mono' in 'public/index.html' or import in 'index.css'.",
+    "2. Configure Tailwind: Update 'tailwind.config.js' with the new color palette (primary, secondary, background, surface).",
+    "3. Global CSS: Apply the 'void' background color to the body in 'index.css'.",
+    "4. Layouts: Build the Dashboard using a Bento Grid approach. Use 'react-resizable-panels' for the IDE-like workspace.",
+    "5. Components: Customize Shadcn components to match the 'Cyberpunk/Tactical' aesthetic (remove heavy roundness, add borders, darken backgrounds).",
+    "6. Charts: Use 'recharts' with the custom color palette (Neon Cyan, Electric Violet) for data visualization.",
+    "7. Agents: Visualise agents as 'Active Nodes' with pulsing animations using 'tailwindcss-animate'."
+  ]
+}
